@@ -1,0 +1,59 @@
+<h1>Update Status</h1>
+<form [formGroup]="viewrequestForm" (ngSubmit)="submitForm()" novalidate>
+<div>
+    <label class="lablehead">Request Id : </label>
+     <input type="text" readonly name="firstname" class="box" formControlName="requestId" />
+</div>
+<div>
+    <label class="lablehead">First Name : </label>
+     <input type="text" readonly name="firstname" class="box" formControlName="firstName" />
+</div>
+<div>
+    <label class="lablehead">MiddleName : </label>
+     <input type="text" readonly name="middlename" class="box" formControlName="middleName" />
+</div>
+<div>
+    <label class="lablehead">Last Name : </label>
+     <input type="text" readonly name="lastname" class="box" formControlName="lastname" />
+</div>
+<div>
+    <label class="lablehead">Mobile Number : </label>
+     <input type="number" readonly name="MobileNum" class="box" formControlName="mobileNum" />
+</div>
+<div>
+    <label class="lablehead">EmailId : </label>
+     <input type="text" readonly name="emailId" class="box" formControlName="emailId" />
+</div>
+<div>
+    <label class="lablehead">AddharCard Number : </label>
+     <input type="number" readonly name="AddharCard" class="box" formControlName="addharCard" />
+</div>
+<div>
+    <label class="lablehead">Date of Birth : </label>
+    <input class="datepicker" data-date-format="yyyy/mm/dd" formControlName="dob"> 
+</div>
+<div>
+    <label class="lablehead">Residential Address : </label>
+     <textarea formControlName="residentialAddress"> </textarea>
+</div>
+<div>
+    <label class="lablehead">Permenent Address : </label>
+    <textarea formControlName="permenentAddress" > </textarea> 
+</div>
+<div>
+    <label class="lablehead">Occupational Details : </label>
+     <input type="text" readonly name="occupationalDetails" class="box" formControlName="occupationalDetails" />
+</div>
+<div>
+    <label class="lablehead">Gross Annual Income : </label>
+     <input type="number" readonly name="grossAnnualIncome" class="box" formControlName="grossAnnualIncome" />
+</div>
+<div>
+    <label class="lablehead">Status</label>
+     <input type="text" readonly name="status" class="box" formControlName="status" />
+</div>
+<div>
+    <button type="submit" class="button" routerLink="viewrequests"> Submit </button>
+</div>
+</form>
+

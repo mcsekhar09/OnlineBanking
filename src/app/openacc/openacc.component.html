@@ -1,0 +1,97 @@
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Savings Account</title>
+<div class="bg-image">
+  <div class="form">
+  <h1 style="color: white;">Open Savings Account</h1>
+  <form [formGroup]="accountopenForm" (ngSubmit)="RegisterUser()" novalidate>
+    <div >
+        <label class="lablehead">Title*</label>
+        <select id="title" name="title" class="box" value="select" formControlName="Title">
+          <option value="Mr.">Mr.</option>
+          <option value="Ms.">Ms.</option>
+          <option value="Mrs.">Mrs.</option>
+        </select>
+      </div>
+ 
+        <label class="lablehead">First Name* : </label>
+        <input type="text" id="firstname" name="firstname" class="box" formControlName="FirstName" />
+     
+        
+    
+    
+      
+        <label class="lablehead">Middle Name :</label>
+        <input type="text" id="middlename" name="middlename" class="box" formControlName="MiddleName"/>
+ <br>
+    
+        <label class="lablehead">Last Name* :</label>
+        <input type="text" id="lastname" name="lastname" class="box" formControlName="Lastname"/>
+        
+    <label class="lablehead">Father Name* : </label>
+    <input type="text" id="fathername" name="fathername" class="box" formControlName="FatherName" />
+    <br>
+
+      
+        <label class="lablehead">Mobile Number* :</label>
+        <input type="mobile" id="mobile" name="mobile" class="box" formControlName="MobileNum"/>
+        
+        
+
+
+    
+        <label class="lablehead">Email Id* :</label>
+        <input type="text" id="email" name="email" class="box" formControlName="EmailId"/>
+        <br>
+    
+        <label class="lablehead">Aadhar Card Number* :</label>
+        <input type="number"id="aadhar" class="box" formControlName="AddharCard">
+        
+    
+      
+          <label class="lablehead">Date of Birth* :</label>
+          <input type="date" id="dob" class="date" class="box" formControlName="Dob">
+         
+      <br>
+      
+     
+          <label class="lablehead">Residential Address* :</label>
+          <textarea id="address" class="box" formControlName="ResidentialAddress"></textarea>
+          
+      
+      
+        <label class="lablehead">Permanent Address* :</label>
+        <textarea id="address" class="box" formControlName="PermenentAddress"></textarea>
+        
+<br>
+   
+ 
+      <label class="lablehead">Source of Income* :</label>
+      <input type="text"id="aadhar" class="box" formControlName="OccupationalDetails">
+
+       
+    
+      
+          <label class="lablehead">Gross Annual Salary* :</label>
+          <input type="number"id="aadhar" class="box" formControlName="GrossAnnualIncome">
+  
+        
+       
+    <br>
+      <label class="rad" > Do you want debitcard</label>
+        <input type="radio" name="yes_no" class="yes" > Yes
+        <input type="radio" name="yes_no" class="yes"> No
+     <br>
+      <input type="checkbox" value="text" >
+      <label class="check">Opt for Net Banking</label> 
+        <br>
+     <input type="checkbox" value="text">
+     <label class="check">I Agree Terms & Conditions</label> 
+ 
+           <br> 
+    {{accountopenForm.valid}}
+        <button type="submit" class="button" > Submit </button>
+        {{message}}
+      </form>
+  </div>
+</div>

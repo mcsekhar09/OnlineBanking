@@ -1,0 +1,51 @@
+.lablehead
+{
+    font-size: 15px;
+    padding:8px;
+    width: 20%;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.box{
+    padding:8px;
+    width:20%;
+    margin: 5px;
+}
+
+.button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #000;
+    width: 19%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.check {
+    text-align: left;
+    font-size: 15px;
+    padding: 8px;
+    width: 35%;
+    display: inline-block;
+
+}
+.yes {
+    text-align:right;
+    width: 1%;
+}
+.rad
+{
+    text-align: left;
+    font-size: 15px;
+    width: 30%;
+    padding: 8px;
+    display: inline-block;
+}

@@ -1,0 +1,28 @@
+<div style=" text-align: center;">
+    <h1>Add Payee</h1>
+    <form [formGroup]="addpayeeForm" (ngSubmit)="AddBenificiary()" novalidate>
+        
+        <label class="lablehead">Beneficiary Name : </label> 
+       <input type = "textbox" id="beneficiary-name" value="" class="box" formControlName="Beneficiaryname">
+       
+      
+       <br>
+        <label class="lablehead">Beneficiary Account Number :</label>
+      <input type="number" id="beneficiary-Account-number" value="" class="box" formControlName="BeneficiaryAccNo">
+    
+      <br>
+      <label class="lablehead">IFSC Code : </label> 
+       <input type = "textbox" id="IFSCCode" value="" class="box" formControlName="IfscCode">
+       
+        <br>
+       <input type="checkbox" id="saveBeneficiary">Save Beneficiary
+
+       <br>
+       <label class="lablehead">Nick Name :</label>
+       <input type = "textbox" id="nickname" value=" " class="box" formControlName="Nickname">
+       <br>
+       <div>
+       <button type="submit" class="button">Save As Beneficiary</button></div>
+       {{message}}
+    </form>
+    </div>

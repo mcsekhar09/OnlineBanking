@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AccountopenService } from './Models/accountopen.service';
+import { AccountopenService } from '../Models/accountopen.service';
+import { Subject } from 'rxjs';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.css']
 })
-export class AppComponent {
-  title = 'projectbank';
+export class MainComponent implements OnInit {
+
   message:boolean=false;
 
   constructor(private service:AccountopenService,private router:Router) { }

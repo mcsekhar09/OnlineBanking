@@ -1,0 +1,69 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiate Payment</title>
+  </head>   
+    <body>
+        <div class="body1">
+       
+        <font color="darkblue"><p margin-align:center><b><h1>Online Banking</h1></b></p></font>    
+                
+<div style=" text-align: center;">
+    <br>
+    <h1>Initiate Payment</h1>
+    <form [formGroup]="fundtransferForm" (ngSubmit)="onSubmit()"novalidate>  
+
+        <label class="lablehead">Customer Id : </label> 
+       <input type = "number" id="from account" value="" class="box" formControlName="customerId">
+      
+       <br>
+        <label class="lablehead">From Account : </label> 
+       <input type = "number" id="from account" value="" class="box" formControlName="fromAcc">
+      
+       <br>
+        <label class="lablehead">To Account :</label>
+        <input type = "number" id="from account" value="" class="box" formControlName="toAcc">
+      
+       
+       <br>
+       <label class="lablehead">Transaction type</label>
+
+        <select id="transaction type" name="transaction type" class="box" value="select" formControlName="transactionType">
+
+          <option value="NEFT">NEFT</option>
+
+          <option value="IMPS">IMPS</option>
+
+          <option value="RTGS">RTGS</option>
+
+        </select>
+        <br>
+        <label class="lablehead">IFSC Code : </label> 
+       <input type = "text" id="IFSCCode" value="" class="box" formControlName="IFSCCode">
+       
+      <br>
+      <label class="lablehead">Amount : </label> 
+      <input type = "number" id="transactiondate" value="" class="box" >
+      <br>
+       <label class="lablehead">Transaction Date : </label> 
+       <input type = "date" id="transactiondate" value="" class="box" formControlName="transactionDate">
+       <br>
+       <label class="lablehead">Remark :</label>
+       <input type = "text" id="remark" value=" " class="box" formControlName="Remark">
+       <br>
+       <p><b><u>Please note</u></b>
+           <br>
+           1. Transaction will be executed on the next working day if they are scheduled for sundays,National Holidays,NEFT Holidays(as declared by RBI).
+           <br>
+           2. Timing for NEFT: Monday-Saturday(except 2nd and 4th Saturday) 6:00AM-6:30PM.
+       </p>
+       <br>
+       <div>
+       <button class="btn_four" >Cancel</button>
+       <button class="btn_four" >Submit</button>
+       </div>
+       <br>
+    </form>
+    </div>
+</div>
+</body>

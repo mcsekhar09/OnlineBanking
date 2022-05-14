@@ -1,0 +1,31 @@
+.lablehead
+{
+    font-size: 15px;
+    padding:8px;
+    width:20%;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.box{
+    padding:5px;
+    width:20%;
+    margin: 5px;
+}
+
+.button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 20;
+    background: #000;
+    width: 19%;
+    border: 10%;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    margin-top: 15px;
+}

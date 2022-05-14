@@ -1,0 +1,16 @@
+<div style=" text-align: center;">
+    <h1>Admin Login</h1>
+    <form (ngSubmit)="login()" >
+        
+        <label class="lablehead">Admin Id : </label> 
+       <input type = "textbox" name="Adminid" class="box" [(ngModel)]="Admin.Adminid" >
+      
+       <br>
+        <label class="lablehead">Password :</label>
+      <input type="password" name="passwords" class="box" [(ngModel)]="Admin.Passwords" >
+
+      <div>
+       
+        <button type="submit" class="button">Login</button></div>
+     </form>
+     </div>

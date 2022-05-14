@@ -1,0 +1,32 @@
+<table class="table" border="2">
+    <thead>
+        <tr>
+            <th>RequestId</th>
+            <th>FirstName</th>
+            <th>Lastname</th>
+            <th>MobileNum</th>
+            <th>EmailId</th>   
+            <th>AddharCard Number</th> 
+            <th>PermenentAddress</th>  
+                               
+           <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Accountrequest of viewrequests">
+            <td>{{Accountrequest.requestId}}</td>
+            <td>{{Accountrequest.firstName}}</td>
+            <td>{{Accountrequest.lastname}}</td>
+            <td>{{Accountrequest.mobileNum}}</td>
+            <td>{{Accountrequest.emailId}}</td>
+            <td>{{Accountrequest.addharCard}}</td>
+            <td>{{Accountrequest.permenentAddress}}</td>
+            
+            <td>
+                <button [routerLink]="['/requestdetails/', Accountrequest.requestId ]">View Requests</button>
+                
+            </td>
+          
+        </tr>
+    </tbody>
+</table>
