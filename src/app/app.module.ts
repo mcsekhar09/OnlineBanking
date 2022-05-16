@@ -17,6 +17,7 @@ import { ViewrequestsComponent } from './viewrequests/viewrequests.component';
 import { RequestdetailsComponent } from './requestdetails/requestdetails.component';
 import { FundtransferComponent } from './fundtransfer/fundtransfer.component';
 import { PaymentpageComponent } from './paymentpage/paymentpage.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { PaymentpageComponent } from './paymentpage/paymentpage.component';
     RequestdetailsComponent,
     FundtransferComponent,
     PaymentpageComponent,
+    DashboardComponent,
    
   ],
   imports: [

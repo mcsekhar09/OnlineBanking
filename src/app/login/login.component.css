@@ -51,7 +51,7 @@
     height:100vh; 
   }
 
-  /* .form-prop
+  .form-prop
   {
       width:250px;
       height:380px;
@@ -61,15 +61,15 @@
       border-radius: 10px;
       padding:30px;
       position: absolute;
-  } */
+  } 
   
   .form {
     position: absolute;
     z-index: 1;
     background:linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    max-width: 500px;
+    max-width: 1000px;
     margin: 0 auto 100px;
-    left: 870px;
+    left: 10%;
     top:36%;
     padding: 30px;
     border-radius: 10px;

@@ -1,5 +1,43 @@
-
-<!-- <app-openacc></app-openacc> 
- <app-viewrequests></app-viewrequests> -->
-<app-main></app-main>
+<body>
+  <header class="header">
+    <h1 class="logo"><a href="#">SAVCMBank</a></h1>
+    <!-- <div *ngIf="!message">  -->
+    <ul class="main-nav">
+          <li><a routerLink="dash">Home</a></li>
+          <li><a href="main">About Us </a></li>
+         
+          <li><a routerLink="openacc">Open Account</a></li>
+          <li><a routerLink="userlogin">Login</a></li>
+         
+          <li><a routerLink="adminlogin">Admin Login</a></li>
+          <li><a routerLink="fundtransfer">Fundtransfer</a></li>
+          <li><a routerLink="benificiary">Benificiary</a></li>
+      </ul>
+      <!-- </div> -->
+      <!-- <div *ngIf="message">
+        <ul class="main-nav">
+          <li><a routerLink="Home">Home</a></li>
+          <li><a href="#">About Us </a></li>
+          <li><a href="#">Contact Us </a></li>
+          <li><a routerLink="Open-acc">Open Account</a></li>
+          <li>
+            <a [routerLink]=""  (click)='logout()'>Logout</a>
+          </li>
+          <li><a routerLink="">Registration</a></li>
+          <li><a routerLink="Admin">Admin Login</a></li>
+      </ul>
+      </div> -->
+  </header> 
+<!-- <app-main></app-main> -->
 <router-outlet></router-outlet>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by SAVCM.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>

@@ -6,28 +6,16 @@
 <div class="bg-image">
 <div class="form">
     <h1 class="log-h1">Login</h1>
-    <form [formGroup]="LoginForm" (ngSubmit)="onSubmit()">
+    <form (ngSubmit)="login()">
 
-        <label class="lablehead">User Id : </label> 
-       <input type = "textbox" id="UserId" class="box" name="UserId" formControlName="UserId">
-       <div *ngIf="!UserId?.valid && (UserId?.dirty || UserId?.touched)">
-        <div [hidden]="!UserId?.errors?.['required']">
-         User Id is required
-        </div>
-        </div>
-
+        <label class="lablehead">Customer Id : </label>  <br>
+       <input type = "number" id="UserId" class="box" name="UserId" formControlName="CustomerId">
        <br>
-        <label class="lablehead">Password :</label>
-       <input type=" textbox" id="Password" class="box" name="Password" formControlName="Password">
-
-       <div *ngIf="!Password?.valid && (Password?.dirty || Password?.touched)">
-        <div [hidden]="!Password?.errors?.['required']">
-          Password Is required</div>
-        
-      </div>
+        <label class="lablehead">Password :</label> <br>
+       <input type="password" id="Password" class="box" name="Password" formControlName="Password">
 
       <div>
-        <button class="button">Login</button>
+        <button type="submit" class="button">Login</button>
       </div>
 
     </form>

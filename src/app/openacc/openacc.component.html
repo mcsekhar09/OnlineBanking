@@ -66,22 +66,16 @@
 <br>
    
  
-      <label class="lablehead">Source of Income* :</label>
-      <input type="text"id="aadhar" class="box" formControlName="OccupationalDetails">
-
-       
+      <label class="lablehead">Source of Income* :</label> 
+      <input type="text" class="box" formControlName="OccupationalDetails">
     
       
           <label class="lablehead">Gross Annual Salary* :</label>
-          <input type="number"id="aadhar" class="box" formControlName="GrossAnnualIncome">
+          <input type="number" class="box" formControlName="GrossAnnualIncome">
   
         
        
     <br>
-      <label class="rad" > Do you want debitcard</label>
-        <input type="radio" name="yes_no" class="yes" > Yes
-        <input type="radio" name="yes_no" class="yes"> No
-     <br>
       <input type="checkbox" value="text" >
       <label class="check">Opt for Net Banking</label> 
         <br>
@@ -89,8 +83,7 @@
      <label class="check">I Agree Terms & Conditions</label> 
  
            <br> 
-    {{accountopenForm.valid}}
-        <button type="submit" class="button" > Submit </button>
+        <button type="submit" class="button" routerLink="userlogin"> Submit </button>
         {{message}}
       </form>
   </div>

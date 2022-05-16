@@ -24,7 +24,8 @@ export class AdminloginService {
 
     constructor(private http:HttpClient) {   
 
-      this.Url='http://localhost:26423/api/admin'
+      this.Url='http://localhost:26423/api/admin';
+      //this.Url='http://localhost:26423/api/user';
       const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };  
       
       const headerSettings: {[name: string]: string | string[]; } = {};  
@@ -34,8 +35,8 @@ export class AdminloginService {
   {
     return this.subject.asObservable();
   }
-  Login(Admin : any){        
-    return this.http.post<any>(this.Url+'/',JSON.stringify(Admin),this.httpOptions );  
+  Login(login : any){        
+    return this.http.post<any>(this.Url+'/',JSON.stringify(login),this.httpOptions );  
   } 
   /* update(id:number, details:Adminlogin): Observable<Adminlogin> {
     return this.http.put<Adminlogin>(this.Url + '/' + id, JSON.stringify(details), this.httpOptions)

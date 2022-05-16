@@ -86,8 +86,8 @@ export class OpenaccComponent implements OnInit {
       console.log(data);
        
       this.accountopenForm.reset();    
-      this.message="Registered Successfully"
-      //this.router.navigateByUrl('Login')
+      this.message="Request for Account Open Sent Successfully"
+      this.router.navigateByUrl('userlogin')
     },
     );    
   }    
