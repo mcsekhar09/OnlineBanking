@@ -33,7 +33,7 @@
     margin-bottom: 15px;
 }
 
-.for {
+/* .for {
     font-style: italic;
 }
 .for_p{
@@ -42,7 +42,7 @@
 *{
     margin: 0;
     padding: 0;
-}
+} */
 
 .bg-image {
     background-image:url('src/assets/login.jpg') ;
@@ -51,7 +51,7 @@
     height:100vh; 
   }
 
-  .form-prop
+  /* .form-prop
   {
       width:250px;
       height:380px;
@@ -61,9 +61,9 @@
       border-radius: 10px;
       padding:30px;
       position: absolute;
-  } 
+  }  */
   
-  .form {
+  /* .form {
     position: absolute;
     z-index: 1;
     background:linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
@@ -81,4 +81,4 @@
       color:#fff;
       font-size: 30px;
     margin-bottom: 10px;
-  }
+  } */

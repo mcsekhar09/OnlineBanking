@@ -259,7 +259,7 @@ ul li a :hover{
 }
 
 .body1{
-    background-image: url(https://st2.depositphotos.com/2605379/50205/i/450/depositphotos_502056288-stock-photo-glowing-blue-digital-bank-icon.jpg);
+    background-image: url('src/assets/login.jpg');
     padding: 60px 150px;
     margin: 100px;
     background-size:cover;
