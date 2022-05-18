@@ -17,7 +17,12 @@ import { ViewrequestsComponent } from './viewrequests/viewrequests.component';
 import { RequestdetailsComponent } from './requestdetails/requestdetails.component';
 import { FundtransferComponent } from './fundtransfer/fundtransfer.component';
 import { PaymentpageComponent } from './paymentpage/paymentpage.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
+import { DashComponent } from './dash/dash.component';
+import { DashboardsComponent } from './dashboards/dashboards.component';
+import { BankstatementComponent } from './bankstatement/bankstatement.component';
+import { ViewstatementComponent } from './viewstatement/viewstatement.component';
+
 
 
 @NgModule({
@@ -35,7 +40,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     RequestdetailsComponent,
     FundtransferComponent,
     PaymentpageComponent,
-    DashboardComponent,
+    DashComponent,
+    DashboardsComponent,
+    BankstatementComponent,
+    ViewstatementComponent
    
   ],
   imports: [

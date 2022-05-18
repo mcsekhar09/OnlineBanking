@@ -1,39 +1,36 @@
 .lablehead
 {
-    font-size: 15px;
+    font-size: 17px;
     padding:8px;
-    width:36%;
+    width:45%;
     display: inline-block;
     text-align: left;
-    color: #fff;
 }
 
 
 .box{
-    padding:5px;
-    width:60%;
-    margin: 5px;
+    padding:10px;
+    width:35%;
+    margin: 10px;
 }
 
 .button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: rgb(138 146 130 / 98%);
-    width: 40%;
-    border-radius: 10px;
+    background: #000;
+    width: 35%;
     border: 0;
     padding: 15px;
-    color: #090909;
+    color: #FFFFFF;
     font-size: 14px;
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
     cursor: pointer;
     margin-top: 15px;
-    margin-bottom: 15px;
 }
 
-/* .for {
+.for {
     font-style: italic;
 }
 .for_p{
@@ -42,7 +39,7 @@
 *{
     margin: 0;
     padding: 0;
-} */
+}
 
 .bg-image {
     background-image:url('src/assets/login.jpg') ;
@@ -63,17 +60,18 @@
       position: absolute;
   }  */
   
-  /* .form {
+  .form {
     position: absolute;
     z-index: 1;
-    background:linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    max-width: 1000px;
+    background:linear-gradient(to top, rgba(0,0,0,0.8)100%,rgba(0,0,0,0.8)50%);
+    max-width: 500px;
     margin: 0 auto 100px;
-    left: 10%;
-    top:36%;
+    left: 100px;
+    top:32%;
+    color: #fff;
     padding: 30px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
 
@@ -81,4 +79,4 @@
       color:#fff;
       font-size: 30px;
     margin-bottom: 10px;
-  } */
+  }

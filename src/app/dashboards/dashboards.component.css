@@ -1,0 +1,94 @@
+.dash{
+    background: url("src/assets/back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+   
+}
+*[role="button"]
+{
+
+    width: 20%;
+
+   padding: 50px;
+
+   margin-top: 250px;
+
+   margin-left: 10%;
+
+   border-radius: 0.5em;
+
+   block-size: 200px;
+
+   text-align: center;
+
+
+
+}
+
+*[role="button1"]
+{
+
+    width: 20%;
+
+   
+
+    padding: 50px;
+ 
+    margin-top: 250px;
+ 
+    margin-left: 8%;
+ 
+    border-radius: 0.5em;
+ 
+    block-size: 200px;
+ 
+    text-align: center;
+
+}
+
+*[role="button2"]{
+
+   
+    width: 20%;
+
+   
+
+    padding: 50px;
+ 
+    margin-top: 250px;
+ 
+    margin-left: 8%;
+ 
+    border-radius: 0.5em;
+ 
+    block-size: 200px;
+ 
+    text-align: center;
+}
+
+*[role="button3"]{
+
+   
+    width: 20%;
+
+    padding: 50px;
+ 
+    margin-top: 250px;
+ 
+    margin-left: 8%;
+ 
+    border-radius: 0.5em;
+ 
+    block-size: 200px;
+ 
+    text-align: center;
+}
+.item a:hover {
+    background-color: rgb(67, 144, 145);
+    transform: scale(1.2);
+  }

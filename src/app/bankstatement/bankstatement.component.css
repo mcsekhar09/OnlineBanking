@@ -1,4 +1,20 @@
-.lablehead_1
+.lablehead
+{
+    font-size: 17px;
+    padding:8px;
+    width:15%;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.box{
+    padding:10px;
+    width:20%;
+    margin: 10px;
+}
+
+/* .lablehead_1
 {
     font-size: 15px;
     padding:8px;
@@ -13,14 +29,14 @@
     padding:5px;
     width:60%;
     margin: 5px;
-}
+} */
 
-.button {
+.button_a {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
     background: rgb(138 146 130 / 98%);
-   width: 100%;
+    width: 40%;
     border-radius: 10px;
     border: 0;
     padding: 15px;
@@ -44,8 +60,9 @@
     padding: 0;
 }
 
-.bg-image_a {
-    background-image:url('src/assets/Admin.jpg') ;
+.bg-image_b {
+    background-color: antiquewhite;
+    /* background-image:url('/assets/img/img6.jpg') ; */
     background-size: cover;
     background-repeat: no-repeat;  
     height:100vh; 
@@ -63,13 +80,13 @@
       position: absolute;
   } */
   
-  .form_a {
+  .form_b {
     position: absolute;
     z-index: 1;
     background:linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     max-width: 500px;
     margin: 0 auto 100px;
-    left: 600px;
+    left: 520px;
     top:32%;
     padding: 30px;
     border-radius: 10px;
@@ -81,4 +98,25 @@
       color:#fff;
       font-size: 30px;
     margin-bottom: 10px;
+  }
+
+  .tbl_sate
+{
+    
+    padding-top: 30%;
+    padding-left: 39%;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 1px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  th {
+    background-color: #f3faf8;
+    color: black;
   }

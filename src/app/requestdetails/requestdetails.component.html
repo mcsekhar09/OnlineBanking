@@ -1,61 +1,61 @@
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<h1>Update Status</h1>
-<form [formGroup]="viewrequestForm" (ngSubmit)="submitForm()" novalidate>
-<div>
-    <label class="lablehead">Request Id : </label>
-     <input type="text" readonly name="firstname" class="box" formControlName="requestId" />
-</div>
-<div>
-    <label class="lablehead">First Name : </label>
-     <input type="text" readonly name="firstname" class="box" formControlName="firstName" />
-</div>
-<div>
-    <label class="lablehead">MiddleName : </label>
-     <input type="text" readonly name="middlename" class="box" formControlName="middleName" />
-</div>
-<div>
-    <label class="lablehead">Last Name : </label>
-     <input type="text" readonly name="lastname" class="box" formControlName="lastname" />
-</div>
-<div>
-    <label class="lablehead">Mobile Number : </label>
-     <input type="number" readonly name="MobileNum" class="box" formControlName="mobileNum" />
-</div>
-<div>
-    <label class="lablehead">EmailId : </label>
-     <input type="text" readonly name="emailId" class="box" formControlName="emailId" />
-</div>
-<div>
-    <label class="lablehead">AddharCard Number : </label>
-     <input type="number" readonly name="AddharCard" class="box" formControlName="addharCard" />
-</div>
-<div>
-    <label class="lablehead">Date of Birth : </label>
-    <input class="datepicker" data-date-format="yyyy/mm/dd" formControlName="dob"> 
-</div>
-<div>
-    <label class="lablehead">Residential Address : </label>
-     <textarea formControlName="residentialAddress"> </textarea>
-</div>
-<div>
-    <label class="lablehead">Permenent Address : </label>
-    <textarea formControlName="permenentAddress" > </textarea> 
-</div>
-<div>
-    <label class="lablehead">Occupational Details : </label>
-     <input type="text" readonly name="occupationalDetails" class="box" formControlName="occupationalDetails" />
-</div>
-<div>
-    <label class="lablehead">Gross Annual Income : </label>
-     <input type="number" readonly name="grossAnnualIncome" class="box" formControlName="grossAnnualIncome" />
-</div>
-<div>
-    <label class="lablehead">Status</label>
-     <input type="text" readonly name="status" class="box" formControlName="status" />
-</div>
-<div>
-    <button type="submit" class="button" routerLink="viewrequests"> Submit </button>
-</div>
-</form>
-
+<div class="bg-image_r">
+    <div class="form_r">
+    <h1 class="log-h1">Update Status</h1>
+    <form [formGroup]="viewrequestForm" (ngSubmit)="submitForm()" novalidate>
+    <div>
+        <label class="lablehead_2">Request Id : </label> <br>
+         <input type="text" readonly name="firstname" formControlName="requestId" class="box_3"/>
+    </div>
+    <div>
+        <label class="lablehead_2">First Name : </label>
+         <input type="text" readonly name="firstname" formControlName="firstName" class="box_3" />
+    </div>
+    <div>
+        <label class="lablehead_2">MiddleName : </label>
+         <input type="text" readonly name="middlename" formControlName="middleName" class="box_3" />
+    </div>
+    <div>
+        <label class="lablehead_2">Last Name : </label>
+         <input type="text" readonly name="lastname" class="box" formControlName="lastname" class="box_3" />
+    </div>
+    <div>
+        <label class="lablehead_2">Mobile Number : </label>
+         <input type="number" readonly name="MobileNum" formControlName="mobileNum" class="box_3"/>
+    </div>
+    <div>
+        <label class="lablehead_2">EmailId : </label>
+         <input type="text" readonly name="emailId" formControlName="emailId"  class="box_3"/>
+    </div>
+    <div>
+        <label class="lablehead_2">AddharCard Number : </label>
+         <input type="number" readonly name="AddharCard" formControlName="addharCard" class="box_3" />
+    </div>
+    <div>
+        <label class="lablehead_2">Date of Birth : </label>
+        <input class="text" formControlName="dob" class="box_3"> 
+    </div>
+    <div>
+        <label class="lablehead_2">Residential Address : </label>
+         <input type="text" readonly formControlName="residentialAddress" class="box_3">
+    </div>
+    <div>
+        <label class="lablehead_2">Permenent Address : </label>
+        <input type="text" readonly formControlName="permenentAddress" class="box_3" > 
+    </div>
+    <div>
+        <label class="lablehead_2">Occupational Details : </label>
+         <input type="text" readonly name="occupationalDetails" formControlName="occupationalDetails" class="box_3" />
+    </div>
+    <div>
+        <label class="lablehead_2">Gross Annual Income : </label>
+         <input type="number" readonly name="grossAnnualIncome" formControlName="grossAnnualIncome"  class="box_3" />
+    </div>
+    <div>
+        <label class="lablehead_2">Status</label>
+         <input type="text" readonly name="status" formControlName="status" class="box_3" />
+    </div>
+    <div>
+        <button type="submit" class="button_r" routerLink="viewrequests"> Submit </button>
+    </div>
+    </form>
+    </div>

@@ -1,4 +1,7 @@
-<table class="table" border="2" >
+<body class="bg-image_b">
+<div class="tbl_sate">
+    <table class="table" border="2" >
+
     <thead>
         <tr>
             <th>RequestId</th>
@@ -23,10 +26,12 @@
             <td>{{Accountrequest.permenentAddress}}</td>
             
             <td>
-                <button [routerLink]="['/requestdetails/', Accountrequest.requestId ]">View Requests</button>
+                <button [routerLink]="['/requestdetails/', Accountrequest.requestId ]" class="button">View Requests</button>
                 
             </td>
           
         </tr>
     </tbody>
 </table>
+</div>
+</body>

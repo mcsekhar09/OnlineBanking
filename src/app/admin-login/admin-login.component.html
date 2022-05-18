@@ -1,21 +1,18 @@
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Open Savings Account</title>
-<div class="bg-image">
-  <div class="form">
-<div style=" text-align: center;">
-    <h1 style="color: white;">Admin Login</h1>
-    <form (ngSubmit)="login()" >
-        
-        <label class="lablehead">Admin Id : </label> 
-       <input type = "textbox" name="Adminid" class="box" [(ngModel)]="Admin.Adminid" >
+<div  class="bg-image_a">
+  <div class="form_a">
+  <h1 class="log-h1">Admin Login</h1>
+  <form (ngSubmit)="login()" >
       
-       <br>
-        <label class="lablehead">Password :</label>
-      <input type="password" name="passwords" class="box" [(ngModel)]="Admin.Passwords" >
+      <label class="lablehead_1">Admin Id : </label> 
+     <input type = "textbox" name="Adminid" [(ngModel)]="Admin.Adminid" class="box_2">
+    
+     <br>
+      <label class="lablehead_1">Password :</label>
+    <input type="password" name="passwords" [(ngModel)]="Admin.Passwords" class="box_2" >
 
-      <div>
-       
-        <button type="submit" class="button">Login</button></div>
-     </form>
-     </div>
+    <div>
+     
+      <button type="submit" class="button">Login</button></div>
+   </form>
+   </div>
+   </div>

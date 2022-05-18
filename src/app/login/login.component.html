@@ -1,4 +1,28 @@
 <head>
+  <header class="header">
+    <h1 class="logo"><a href="#">SvacmBank</a></h1>
+  <div *ngIf="!message">  
+    <ul class="main-nav">
+          <li><a routerLink="home">Home</a></li>
+          <li><a routerLink="aboutus">About Us </a></li>
+          <li><a routerLink="openacc">Open Account</a></li> 
+          <li><a routerLink="userlogin">Login</a></li>
+          <li><a routerLink="adminlogin">Admin Login</a></li>
+      </ul>
+       </div> 
+       <div *ngIf="message">
+        <ul class="main-nav">
+          <li><a routerLink="home">Home</a></li>
+          <li><a routerLink="aboutus">About Us </a></li>
+         
+          <!-- <li><a routerLink="openacc">Open Account</a></li> -->
+          <li>
+            <a href="home"  (click)='logout()'>Logout</a>
+          </li>
+          
+      </ul>
+      </div>
+  </header>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
@@ -8,12 +32,16 @@
     <h1 class="log-h1">Login</h1>
     <form (ngSubmit)="login()">
 
-        <label class="lablehead">Customer Id : </label>  <br>
+        <label class="lablehead">Customer Id : </label>
        <input type = "number" id="UserId" class="box" name="UserId" >
        <br>
-        <label class="lablehead">Password :</label> <br>
+        <label class="lablehead">Password :</label> 
        <input type="password" id="Password" class="box" name="Password" >
-
+       <div>  
+        <p style="color:#E92626;font-size:20px;font-weight:normal" Class="success" align="left">  
+          {{errorMessage}}  
+        </p>  
+      </div>
       <div>
         <button type="submit" class="button">Login</button>
       </div>
@@ -21,9 +49,4 @@
     </form>
   </div>
 
-     <div class="for">
-     <p><a routerLink="register" class="for_p">First Time user? Register</a></p>
-     <p><a routerLink="forgotid" class="for_p">Forgot User Id?</a></p>
-     <p><a routerLink="forgotpass" class="for_p">Forgot Password?</a></p>
-    </div>
      </div>

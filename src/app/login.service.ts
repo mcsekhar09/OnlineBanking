@@ -24,8 +24,8 @@ export class LoginService {
     constructor(private http:HttpClient) {   
 
       //this.Url='http://localhost:26423/api/admin';
-      
-      this.Url='http://localhost:5000/api/user';
+      this.Url='http://localhost:26423/api/user';
+      //this.Url='http://localhost:5000/api/user';
       const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };  
       
       const headerSettings: {[name: string]: string | string[]; } = {};  

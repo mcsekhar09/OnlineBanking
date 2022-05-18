@@ -1,0 +1,46 @@
+.tbl_sate
+{
+    padding-top: 30%;
+    padding-left: 39%;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 1px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  th {
+    background-color: #f3faf8;
+    color: black;
+  }
+
+  .bg-image_b {
+    background-color: #d8d8d8 ;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    height:100vh; 
+  }
+  .tbl_sate
+{
+    padding-top: 10%;
+    padding-left: 2%;
+}
+/* .button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #000;
+    width: 19%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    margin-top: 15px;
+} */

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { AccountopenService } from './Models/accountopen.service';
+import { LoginService } from './login.service';
+
 
 @Component({
   selector: 'app-root',
@@ -8,13 +9,13 @@ import { AccountopenService } from './Models/accountopen.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projectbank';
-  message:boolean=false;
-
-  constructor(private service:AccountopenService,private router:Router) { }
+   message:boolean=false;
+  title:any
+  constructor(private service:LoginService,private router:Router) { }
 
   ngOnInit(): void {
-    this.service.recievedStatus().subscribe((data)=>{
+    this.service.recievedStatus().subscribe(
+      (data)=>{
       this.message=data;//true
       });
   }
@@ -25,6 +26,6 @@ export class AppComponent {
     sessionStorage.clear();
     this.service.subject.next(false);
     //this.message=false;
-    this.router.navigate(['Login']); 
+    this.router.navigate(['userlogin']); 
   } 
 }

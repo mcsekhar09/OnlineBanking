@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { FundtransferService } from '../fundtransfer.service';
+import { LoginService } from '../login.service';
+
 
 @Component({
   selector: 'app-fundtransfer',
@@ -10,6 +12,7 @@ import { FundtransferService } from '../fundtransfer.service';
 })
 export class FundtransferComponent implements OnInit {
 
+  message:boolean=false;
   fundtransferForm=new FormGroup({
     fromAcc:new FormControl(''),
     toAcc:new FormControl(''),
@@ -20,7 +23,7 @@ export class FundtransferComponent implements OnInit {
     customerId:new FormControl('')
  
  })
- constructor(private formbulider: FormBuilder,private router: Router,private createService:FundtransferService) { }
+ constructor(private Service:LoginService,private formbulider: FormBuilder,private router: Router,private createService:FundtransferService) { }
 
   ngOnInit(): void {
   }
@@ -30,5 +33,14 @@ export class FundtransferComponent implements OnInit {
       console.log(data);
      this.router.navigateByUrl('/paymentpage')
     });   
-  } 
+  }
+  logout()
+  {
+    console.log("hi");
+    sessionStorage.removeItem('username');
+    sessionStorage.clear();
+    this.Service.subject.next(false);
+    //this.message=false;
+    this.router.navigate(['userlogin']); 
+  }  
 }

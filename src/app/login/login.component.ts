@@ -9,7 +9,8 @@ import { LoginService } from '../login.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  
+  message:boolean=false;
+  title:any
 
   userlogin : any={};    
 
@@ -27,10 +28,20 @@ login(){
         sessionStorage.setItem('CustomerId',this.userlogin.CustomerId)
         //this.Service.sendstatus(true);
         this.Service.subject.next(true);
-        this.router.navigate(['dash']);     
+        this.router.navigate(['dashboards']);     
          console.log(res);
-      },    
+      },
+          
     );    
   };    
 
+  logout()
+  {
+    console.log("hi");
+    sessionStorage.removeItem('username');
+    sessionStorage.clear();
+    this.Service.subject.next(false);
+    //this.message=false;
+    this.router.navigate(['userlogin']); 
+  } 
 }
