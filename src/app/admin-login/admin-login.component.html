@@ -10,6 +10,11 @@
       <label class="lablehead_1">Password :</label>
     <input type="password" name="passwords" [(ngModel)]="Admin.Passwords" class="box_2" >
 
+    <div>  
+      <p style="color:#E92626;font-size:20px;font-weight:normal" Class="success" align="left">  
+        {{errorMessage}}  
+      </p>  
+    </div>
     <div>
      
       <button type="submit" class="button">Login</button></div>

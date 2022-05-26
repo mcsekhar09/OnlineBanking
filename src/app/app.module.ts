@@ -21,7 +21,7 @@ import { PaymentpageComponent } from './paymentpage/paymentpage.component';
 import { DashComponent } from './dash/dash.component';
 import { DashboardsComponent } from './dashboards/dashboards.component';
 import { BankstatementComponent } from './bankstatement/bankstatement.component';
-import { ViewstatementComponent } from './viewstatement/viewstatement.component';
+
 
 
 
@@ -43,7 +43,7 @@ import { ViewstatementComponent } from './viewstatement/viewstatement.component'
     DashComponent,
     DashboardsComponent,
     BankstatementComponent,
-    ViewstatementComponent
+  
    
   ],
   imports: [

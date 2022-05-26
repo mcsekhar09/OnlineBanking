@@ -46,7 +46,7 @@
 
 .bg-image_r {
     
-   background-image: url('src/assets/login.jpg');
+   background-image: url('/assets/login.jpg');
     background-size: cover;
     background-repeat: no-repeat;  
     height:250vh; 

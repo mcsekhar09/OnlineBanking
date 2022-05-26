@@ -28,7 +28,7 @@ login(){
         sessionStorage.setItem('CustomerId',this.userlogin.CustomerId)
         //this.Service.sendstatus(true);
         this.Service.subject.next(true);
-        this.router.navigate(['dashboards']);     
+        this.router.navigate(['benificiary']);     
          console.log(res);
       },
           

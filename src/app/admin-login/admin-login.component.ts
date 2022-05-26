@@ -32,7 +32,16 @@ login(){
       },    
     
     );    
-  };    
+  };   
+  adminlogout()
+  {
+    console.log("hi");
+    sessionStorage.removeItem('username');
+    sessionStorage.clear();
+    this.Service.subject.next(false);
+    //this.message=false;
+    this.router.navigate(['adminlogin']); 
+  }  
 
 
 }

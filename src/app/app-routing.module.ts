@@ -16,7 +16,7 @@ import { PaymentpageComponent } from './paymentpage/paymentpage.component';
 import { RegisterComponent } from './register/register.component';
 import { RequestdetailsComponent } from './requestdetails/requestdetails.component';
 import { ViewrequestsComponent } from './viewrequests/viewrequests.component';
-import { ViewstatementComponent } from './viewstatement/viewstatement.component';
+
 
 
 const routes: Routes = [
@@ -35,7 +35,7 @@ const routes: Routes = [
   { path: 'paymentpage', component: PaymentpageComponent },
   { path: 'dashboards', component: DashboardsComponent },
   { path: 'bankstatement', component: BankstatementComponent },
-  { path: 'statement', component: ViewstatementComponent },
+  
 ];
 
 @NgModule({

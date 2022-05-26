@@ -11,6 +11,7 @@ import { LoginService } from './login.service';
 export class AppComponent {
    message:boolean=false;
   title:any
+  adminmessage:boolean=false
   constructor(private service:LoginService,private router:Router) { }
 
   ngOnInit(): void {
@@ -27,5 +28,15 @@ export class AppComponent {
     this.service.subject.next(false);
     //this.message=false;
     this.router.navigate(['userlogin']); 
+  } 
+
+  adminlogout()
+  {
+    console.log("hi");
+    sessionStorage.removeItem('username');
+    sessionStorage.clear();
+    this.service.subject.next(false);
+    //this.message=false;
+    this.router.navigate(['adminlogin']); 
   } 
 }

@@ -1,7 +1,7 @@
 <body>
   <header class="header">
     <h1 class="logo"><a href="#">SvacmBank</a></h1>
-  <div *ngIf="!message">  
+  <div *ngIf="!message && !adminmessage">  
     <ul class="main-nav">
           <li><a routerLink="home">Home</a></li>
           <li><a routerLink="aboutus">About Us </a></li>
@@ -15,11 +15,26 @@
           <li><a routerLink="home">Home</a></li>
           <li><a routerLink="aboutus">About Us </a></li>
          <li><a routerLink="fundtransfer">Fund Transfer</a></li>
-          <!-- <li><a routerLink="openacc">Open Account</a></li> -->
+          <li><a routerLink="bankstatement">Account Statement</a></li>
+          <li><a routerLink="benificiary">Add Benificiary</a></li>
           <li>
             <a href="home"  (click)='logout()'>Logout</a>
           </li>
-          
+         
+      </ul>
+      </div>
+      
+      <div *ngIf="adminmessage">
+        <ul class="main-nav">
+          <li><a routerLink="home">Home</a></li>
+          <li><a routerLink="aboutus">About Us </a></li>
+        <!--  <li><a routerLink="fundtransfer">Fund Transfer</a></li>
+          <li><a routerLink="bankstatement">Account Statement</a></li>
+          <li><a routerLink="benificiary">Add Benificiary</a></li> -->
+          <li>
+            <a href="home"  (click)='adminlogout()'>Logout</a>
+          </li>
+         
       </ul>
       </div>
   </header> 
